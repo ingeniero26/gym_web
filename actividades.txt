@@ -1,0 +1,18 @@
+crud de rol de usuario listo
+listar usuarios
+crud de categorias, listo
+agregar usuario
+
+crud medida, listar, eliminar,agregar, modificar, listo el crud
+
+listar productos listo, agregar, editar foto
+ modificar listo
+
+
+listo modulo proveedores
+listo modulo deportistas
+
+
+
+
+

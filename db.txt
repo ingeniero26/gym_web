@@ -1,0 +1,26 @@
+CREATE PROCEDURE SP_HISTORIAL_CLINICO(IN FINICIO DATE , IN FFIN DATE)
+SELECT
+    `fua`.`fua_id`
+    , `fua`.`fua_fregistro`
+    , `fua`.`historia_id`
+    , `fua`.`consulta_id`
+    , `consulta_medica`.`consulta_diagnostico`
+    ,CONCAT_WS(' ', `paciente`.`paciente_nombre`    , `paciente`.`paciente_apepat`    , `paciente`.`paciente_apemat`) AS paciente
+    , `paciente`.`paciente_nrodocumento`
+    , CONCAT_WS(' ', `medico`.`medico_nombre`    , `medico`.`medico_apepat`     , `medico`.`medico_apemat`) AS medico
+FROM
+    `fua`
+    INNER JOIN `consulta_medica` 
+        ON (`fua`.`consulta_id` = `consulta_medica`.`consulta_id`)
+    INNER JOIN `cita` 
+        ON (`consulta_medica`.`cita_id` = `cita`.`cita_id`)
+    INNER JOIN `paciente` 
+        ON (`cita`.`paciente_id` = `paciente`.`paciente_id`)
+    INNER JOIN `medico` 
+        ON (`cita`.`medico_id` = `medico`.`medico_id`)
+        WHERE  `fua`.`fua_fregistro` BETWEEN  FINICIO     AND     FFIN
+
+
+
+
+        

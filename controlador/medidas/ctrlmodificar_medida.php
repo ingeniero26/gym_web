@@ -1,0 +1,17 @@
+<?php 
+require '../../modelo/modelo_medidas.php';
+
+$ME = new ModeloMedidas();
+$id = htmlspecialchars($_POST['id'],ENT_QUOTES,'UTF-8');
+$nombre_actual = htmlspecialchars($_POST['nombre_actual'],ENT_QUOTES,'UTF-8');
+$nombre_nuevo = htmlspecialchars($_POST['nombre_nuevo'],ENT_QUOTES,'UTF-8');
+$abre_editar = htmlspecialchars($_POST['abre_editar'],ENT_QUOTES,'UTF-8');
+$estatus = htmlspecialchars($_POST['estatus'],ENT_QUOTES,'UTF-8');
+$consulta =$ME->ModificarMedida($id,$nombre_actual,$nombre_nuevo, $abre_editar, $estatus);
+echo $consulta;
+
+
+
+
+
+ ?>
