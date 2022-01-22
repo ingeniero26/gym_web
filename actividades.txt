@@ -11,6 +11,7 @@ listar productos listo, agregar, editar foto
 
 listo modulo proveedores
 listo modulo deportistas
+listo modulo de compras(falta anular  no se si lo haga ☺ )
 
 
 

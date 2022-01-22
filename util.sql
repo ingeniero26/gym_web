@@ -312,3 +312,48 @@ SELECT
     pr.fregistro,   pr.estatus
 FROM    proveedor
 AS pr   INNER JOIN  tipo_documento AS td    ON          pr.IDTipoDocumento = td.id
+
+
+
+
+
+
+
+SELECT 
+    c.IDCompra,     c.Fecha,    c.IDProveedor, 
+    pr.NombreComercial,     c.TotalCompra, 
+    c.idUsuario,    us.usuario_nombre, 
+    c.TipoPago,     c.impuesto, 
+    c.estatus,  c.porc_impuesto, 
+    cd.IDCompraDetalle,     cd.IDProducto, 
+    producto.codigo,    cd.Descripcion, 
+    cd.Precio,  cd.Cantidad,    cd.estatus as estado
+FROM    compra AS c
+INNER JOIN  compra_detalle AS cd    ON      c.IDCompra = cd.IDCompra
+    INNER JOIN  proveedor AS pr ON      c.IDProveedor = pr.IDProveedor
+    INNER JOIN  usuarios AS us  ON      c.idUsuario = us.usuario_id
+    INNER JOIN  producto    ON      cd.IDProducto = producto.id
+
+
+
+
+    select  * from usuarios
+
+SELECT * FROM `usuarios` WHERE 
+fregistro
+BETWEEN '2021-12-11' AND '2021-12-12'
+
+
+select * from compra 
+
+
+select IDProveedor,Documento,NombreComercial
+from proveedor
+WHERE proveedor.estatus ='ACTIVO'
+
+
+
+
+
+select id,codigo,descripcion from producto
+where producto.estatus ='ACTIVO'
