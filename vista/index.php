@@ -207,8 +207,33 @@ if(!isset($_SESSION['S_IDUSUARIO'])){
                 <i class="fa fa-angle-left pull-right"></i>
               </span>
            </a></li>
-            <li>  <a onclick="cargar_contenido('contenido_principal','medida/vista_medida.php')" style="cursor: pointer;">
+            <li>  <a onclick="cargar_contenido('contenido_principal','compras/vista_compras.php')" style="cursor: pointer;">
             <i class="fa fa-user"></i> <span>Compras</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a></li> 
+
+           <li>  <a onclick="cargar_contenido('contenido_principal','productos/vista_productos.php')" style="cursor: pointer;">
+            <i class="fa fa-user"></i> <span>Reportes</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a></li>   
+           </ul>
+        </li>
+
+         <li class="treeview">
+          <a href="#">
+            <i class="fa fa-folder"></i> <span>Salidas</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+           
+            <li>  <a onclick="cargar_contenido('contenido_principal','ventas/vista_ventas.php')" style="cursor: pointer;">
+            <i class="fa fa-user"></i> <span>Ventas</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
