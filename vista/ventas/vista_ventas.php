@@ -55,7 +55,7 @@
 
 
 
-<script type="text/javascript" src="../js/compras.js"></script>
+<script type="text/javascript" src="../js/ventas.js"></script>
 <script>
 $(document).ready(function() {
    
