@@ -41,4 +41,19 @@ FROM
         }
     }
 
+  function  listar_combo_deportista() {
+  	   $sql = "SELECT documento, CONCAT_WS('',nombres,apellidos) as cliente
+				from deportista
+					where deportista.estatus ='ACTIVO'";
+        $arreglo = array();
+        if ($consulta = $this->conexion->conexion->query($sql)) {
+            while ($consulta_vu = mysqli_fetch_array($consulta)) {
+                $arreglo[] = $consulta_vu;
+
+            }
+            return $arreglo;
+            $this->conexion->cerrar();
+        }
+  }
+
 }

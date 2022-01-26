@@ -17,8 +17,8 @@
                         <input type="date" class="form-control" id="txt_fecha">
                     </div>
             	   <div class="col-lg-4">
-                       <label for=""><b>Proveedor</b> </label>
-                        <select class="js-example-basic-single" name="state" style="width: 100%;" id="cmb_proveedor"> 
+                       <label for=""><b>Deportista</b> </label>
+                        <select class="js-example-basic-single" name="state" style="width: 100%;" id="cmb_deportista"> 
                        
                          </select> 
                     </div>
@@ -157,7 +157,7 @@ $(document).ready(function() {
    
   $('.js-example-basic-single').select2();
 
- listar_combo_proveedor();
+ listar_combo_deportista();
  listar_combo_producto();
  //listar_combo_bodega();
  

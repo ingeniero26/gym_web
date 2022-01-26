@@ -4,7 +4,7 @@
             <div class="box-header with-border">
                 <div class="box-title">MANTENIMIENTO VENTAS DE PRODUCTOS</div>
                   <div class="col-lg-2"> 
-                   <button class="btn btn-primary" style="width: 100%" onclick="cargar_contenido('contenido_principal','compras/compra_registro.php')"><i class="fa fa-plus">Nuevo Registro</i></button>
+                   <button class="btn btn-primary" style="width: 100%" onclick="cargar_contenido('contenido_principal','ventas/venta_registro.php')"><i class="fa fa-plus">Nuevo Registro</i></button>
                 </div>
             </div>
            
@@ -19,9 +19,9 @@
 	            	</div>
 	            	<div class="col-lg-3">
 	            		<label for="">&nbsp;</label><br>
-	            		<button class="btn btn-success" style="width:100%" onclick="listar_ventas()"><i class="fa fa-search"></i>Buscar</button>
-	            	</div>
-            	 <br>
+	            		<button class="btn btn-success" style="width:100%" onclick="listar_ventas()"><i class="fa fa-search"></i>Buscar</button><br><br>
+	            	</div> 
+            	 
             	
             	
             	<table id="tabla_ventas" class="display table-bordered table-responsive" style="width:100%">
